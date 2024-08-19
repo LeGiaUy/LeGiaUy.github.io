@@ -78,6 +78,33 @@ body {
     background-color: #f5f5f5;
     color: #FF4357;
 }
+/* Styling for the search form */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Aligns the search form to the right within the menu */
+}
+
+.search-form input[type="search"] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #FF4357;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #e0304d;
+}
 /* CSS cho content */
 #content {
     display: flex;
