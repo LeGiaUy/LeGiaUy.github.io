@@ -3,6 +3,8 @@
     padding: 0px;
 }
 body {
+    color: #132037;
+    font-family: 'Lato', sans-serif;
     background-color: #f5f5f5;
 }
 #header {
@@ -179,8 +181,16 @@ table {
     width: 100%;
     border-collapse: collapse; /* Loại bỏ khoảng cách giữa các viền */
 }
-
+.blurred-letters {
+    margin-bottom: -15px;
+    color: #677081;
+}
+.bold-letters {
+    font-weight: bold;
+    color: #132037;
+}
 td {
+    width: 25%;
     padding: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Viền dưới với độ mờ */
 }
@@ -189,47 +199,63 @@ tr:last-child td {
     border-bottom: none; /* Xóa viền dưới cho hàng cuối cùng */
 }
 .left-col {
+    color: #677081;
     width: 15%;
 }
 .right-col {
     width: 45%;
 }
 .last-col {
+    color: #677081;
     width: 100%;
 }
-#mouse {
+.settings {
+    padding: 24px;
     background-color: white;
     margin-top: 20px;
 }
 .table-container {
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#crosshair {
-    background-color: white;
-    margin-top: 20px;
-    flex: 1 1 100%;
-    font-family: 'Lato', sans-serif;
-    overflow: hidden;
-    display: flex;
     flex-wrap: wrap;
 }
 #crosshair-container {
-        flex: 100%;
-        display: flex;
-        justify-content: center; /* Centers the image horizontally */
-        align-items: center;     /* Centers the image vertically if needed */
-        height: 100%;            /* Ensure the container has height for vertical centering */
+    flex: 100%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;     /* Centers the image vertically if needed */
+    height: 100%;            /* Ensure the container has height for vertical centering */
 }
 
-    #crosshair-container img {
+#crosshair-container img {
         max-width: 100%;         /* Ensures the image scales within its container */
         height: auto;            /* Maintains the aspect ratio */
 }
-#title {
+.title {
+    font-size: 18px; 
+    color: #132037;
     margin-left: 40px;
     flex: 100%;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
+}
+.gear-container {
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    display: flex;
+}
+
+.gear {
+    flex: 1 1 25%;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 12px;
+    flex-direction: column;
+}
+.gear-image {
+    display: block; /* Đảm bảo ảnh không có khoảng cách thừa xung quanh */
+    width: 100%;
 }
